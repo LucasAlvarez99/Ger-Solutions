@@ -73,6 +73,11 @@ section[id],header[id]{scroll-margin-top:70px}
 /* cta */
 .section-cta{background:var(--peach);overflow:hidden}
 .section-cta .tramas{opacity:.5}
+.instagram-link{display:inline-flex;align-items:center;gap:.4rem;color:inherit;text-decoration:underline;text-underline-offset:.2em}
+.instagram-link:hover{color:var(--teal)}
+.instagram-icon{width:1.15rem;height:1.15rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.instagram-icon-dot{fill:currentColor;stroke:none}
+.facebook-icon{fill:currentColor;stroke:none}
 .form-card{background:#fff;border-radius:1.5rem;padding:2rem;box-shadow:0 20px 50px rgba(0,0,0,.12)}
 .form-label{font-weight:500}
 .form-control:focus,.form-select:focus{border-color:var(--teal);box-shadow:0 0 0 .2rem rgba(68,116,120,.2)}
