@@ -1,0 +1,84 @@
+:root{--sage:#80aea1;--teal:#447478;--moss:#728878;--peach:#ffb890;--ink:#000;--cream:#fff6ef}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;font-weight:400;color:#1b1b1b;background:var(--cream);overflow-x:hidden}
+h1,h2,h3,.brand,.btn,.num{font-family:'Poppins',sans-serif}
+section[id],header[id]{scroll-margin-top:70px}
+.eyebrow{text-transform:uppercase;letter-spacing:.25em;font-size:.8rem;color:var(--teal);font-weight:500}
+.eyebrow-light{color:var(--peach)}
+.display-title{font-weight:800;font-size:clamp(2.2rem,5.5vw,4.2rem);line-height:1.08}
+.display-title span{background:linear-gradient(90deg,var(--teal),var(--moss));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead-text{font-size:1.3rem;font-weight:300;max-width:34rem}
+.section{padding:6rem 0;position:relative}
+.section-title{font-weight:800;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.15}
+.sub{max-width:42rem;font-weight:300;font-size:1.15rem}
+.text-white-75{color:rgba(255,255,255,.85);font-size:1.15rem;font-weight:300}
+/* nav */
+.geri-nav{padding:1rem 0;transition:.3s}
+.geri-nav.scrolled{background:rgba(255,246,239,.92);backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.08);padding:.5rem 0}
+.brand{display:inline-flex;align-items:flex-end;gap:.45rem;color:var(--ink);text-decoration:none;font-weight:800;font-size:1.5rem;line-height:1}
+.brand small{font-family:'Jost';font-weight:300;font-size:.55rem;letter-spacing:.3em;margin-bottom:.15rem}
+.brand-leaf{width:26px;height:42px;color:var(--teal)}
+.nav-link{color:var(--ink);font-weight:500;position:relative}
+.nav-link::after{content:"";position:absolute;left:.5rem;right:.5rem;bottom:2px;height:2px;background:var(--peach);transform:scaleX(0);transition:.3s}
+.nav-link:hover::after{transform:scaleX(1)}
+/* buttons */
+.btn-geri{background:var(--ink);color:#fff;border-radius:50rem;padding:.6rem 1.6rem;font-weight:600;border:2px solid var(--ink);transition:.3s}
+.btn-geri:hover{background:var(--peach);color:var(--ink);border-color:var(--peach);transform:translateY(-3px);box-shadow:0 10px 25px rgba(255,184,144,.6)}
+.btn-outline-geri{border:2px solid var(--teal);color:var(--teal);border-radius:50rem;font-weight:600;padding:.6rem 1.6rem}
+.btn-outline-geri:hover{background:var(--teal);color:#fff}
+/* hero */
+.hero{position:relative;background:linear-gradient(135deg,#a6e3c3 0%,#d9d3a6 55%,var(--peach) 100%);overflow:hidden}
+.tramas{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none}
+.tramas path{fill:none;stroke:#fff;stroke-width:1.1}
+.leaf-stage{position:relative;display:inline-block;animation:float 6s ease-in-out infinite}
+.leaf-stage::before{content:"";position:absolute;inset:-12%;border-radius:50%;background:rgba(255,255,255,.3);filter:blur(2px)}
+.leaf-big{position:relative;width:240px;height:384px;color:var(--ink)}
+@keyframes float{50%{transform:translateY(-18px)}}
+/* marquee */
+.marquee{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;padding:1.1rem 0}
+.marquee-track{display:inline-flex;animation:scroll 28s linear infinite}
+.marquee span{font-family:'Poppins';font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding:0 2rem}
+.marquee span:nth-child(even){font-family:'Jost';font-weight:300}
+.marquee span::after{content:"/";color:var(--peach);margin-left:4rem}
+@keyframes scroll{to{transform:translateX(-50%)}}
+/* services */
+.section-dark{background:var(--ink);color:#fff}
+.section-dark .eyebrow{color:var(--peach)}
+.card-service{height:100%;padding:2rem;border:1px solid rgba(255,255,255,.15);border-radius:1.2rem;background:rgba(255,255,255,.03);transition:.35s}
+.card-service:hover{transform:translateY(-8px);border-color:var(--peach);background:rgba(255,184,144,.08)}
+.card-service .num{color:var(--sage);font-weight:600;font-size:.9rem}
+.card-service h3{font-weight:800;font-size:1.4rem;margin:.6rem 0}
+.card-service p{font-weight:300;color:rgba(255,255,255,.75);margin:0}
+/* panels */
+.panel{padding:2.5rem;border-radius:1.5rem;font-size:1.15rem}
+.panel-mision{background:linear-gradient(135deg,#a6e3c3,var(--peach))}
+.panel-vision{background:var(--peach)}
+.panel-title{font-weight:800;font-size:2.2rem;margin-bottom:1rem}
+.list-clean{list-style:none;padding:0;margin:0}
+.list-clean li{padding-left:1.5rem;position:relative;margin-bottom:.8rem}
+.list-clean li::before{content:"";position:absolute;left:0;top:.7em;width:.6rem;height:2px;background:var(--ink)}
+.philo{text-align:center;max-width:46rem;margin:5rem auto 0}
+.philo-leaf{width:46px;height:74px;color:var(--teal)}
+.philo p{font-size:1.3rem;font-weight:300}
+.pills{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.pills span{border:1.5px solid var(--teal);color:var(--teal);border-radius:50rem;padding:.4rem 1.3rem;font-weight:500}
+/* green */
+.section-green{background:var(--teal)}
+.geri-acc .accordion-item{background:rgba(255,255,255,.08);border:0;border-radius:1rem!important;margin-bottom:.8rem;overflow:hidden}
+.geri-acc .accordion-button{background:transparent;color:#fff;font-family:'Poppins';font-weight:600;box-shadow:none}
+.geri-acc .accordion-button:not(.collapsed){color:var(--peach)}
+.geri-acc .accordion-button::after{filter:invert(1)}
+.geri-acc .accordion-body{color:rgba(255,255,255,.88);font-size:1.1rem;font-weight:300}
+.hashtags{color:var(--moss);font-weight:500;margin-top:2rem}
+/* cta */
+.section-cta{background:var(--peach);overflow:hidden}
+.section-cta .tramas{opacity:.5}
+.form-card{background:#fff;border-radius:1.5rem;padding:2rem;box-shadow:0 20px 50px rgba(0,0,0,.12)}
+.form-label{font-weight:500}
+.form-control:focus,.form-select:focus{border-color:var(--teal);box-shadow:0 0 0 .2rem rgba(68,116,120,.2)}
+.footer{background:var(--ink);color:rgba(255,255,255,.8);padding:2rem 0;font-size:.95rem}
+.footer .brand{color:#fff}.footer .brand-leaf{color:var(--sage)}
+/* reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
+.reveal.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.marquee-track,.leaf-stage{animation:none}html{scroll-behavior:auto}}
